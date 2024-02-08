@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'RightGrotesk Narrow';
+    src: url('../assets/RightGrotesk-NarrowBold.ttf') format('truetype'); /* Corrected format value */
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/Lato-Regular.ttf') format('truetype'); /* Corrected format value */
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/Lato-Bold.ttf') format('truetype'); /* Corrected format value */
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'RightGrotesk Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 1em;
+    text-transform: capitalize;
+    color: #17245F;
+    padding-bottom: 12px;
+}
+
+.heading {
+    font-family: 'RightGrotesk Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 1em;
+    text-transform: capitalize;
+    color: #17245F;
+}
+
+h3 {
+    font-family: 'RightGrotesk Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: #00A5FF;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #17245F;
+}
+
+hr {
+    border-color: #00A5FF;
+}
+
+/* CLASSES */
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+.cover-container {
+    margin: auto;
+}
+
+.background-container {
+    position: relative;
+    aspect-ratio: 1920 / 3957;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 400px; /* Adjust as needed */
+    background-image: url('../assets/layout.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.paragraph {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 0.9em;
+    color: #17245F;
+}
+
+.nav-brand {
+    padding-top: 10px;
+}
+
+.instruction { 
+    padding-top: 8px;
+    text-align: center;
+    font-size: 0.7em;
+    line-height: normal;
+}
+
+.underline {
+    text-decoration: none;
+    background-image: linear-gradient(90deg, rgb(0,165,255), rgb(124,193,136));
+    background-repeat: no-repeat;
+    background-position: 0% 82%;;
+    background-size: 100% 16px;
+}
+
+.plus-icon {
+    font-size: 1.3em;
+    color: white;
+    background-color: #00A5FF;
+    border-radius: 125px;
+    margin-right: 8px;
+    padding: 5px 12px;
+}
+
+.spaced { margin: 200px 0; }
+
+.top { padding-top: 25px;}
+
+.bottom { padding-bottom: 15px; }
+
+.cta-btn { padding: 5px 15px; margin-top: 10px; }
+
+.test-div {
+    background-color: rgb(255, 0, 0, 0.25);
+    padding: 150px 100px;
+}
+.test {
+    background-color: rgb(255, 0, 0, 0.25);
+    /* padding: 10px 50px; */
+}
+
+/* MODALS AND SLIDES */
+.modal-header {
+    border: none;
+    padding-bottom: 0;
+}
+
+button.close {
+    color: white;
+    background-color: #00A5FF;
+    opacity: 1;
+    text-shadow: none;
+    border-radius: 100px;
+    margin: 5px 5px 5px 10px !important;
+    padding: 5px 10px !important;
+}
+
+.modal-l {
+    color: white;
+    background-color: #17245F;
+    padding: 0 10px;
+    margin: 8px 0;
+}
+
+.modal-h {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #182465;
+    padding-bottom: 15px;
+}
+
+.modal-p { font-size: 0.8em; }
+
+.slideshow-container {
+    padding: 70px 0;
+}
+
+.slide-content {
+    padding: 100px 0;
+}
+
+.slide1 {
+    height: 600px;
+    background-image: url('../assets/slide1.svg');
+    background-size: cover;
+}
+
+.slide2 {
+    height: 600px;
+    background-image: url('../assets/slide2.svg');
+    background-size: cover;
+}
+
+.slide3 {
+    height: 600px;
+    background-image: url('../assets/slide3.svg');
+    background-size: cover;
+}
+
+/* COLOURS */
+.white { color: white; }
+.black-bg { background-color: black; }
+.blue-bg { background-color: #00A5FF; }
+
+/* IDS */
+
+#hero {
+    height: 92vh;
+    max-height: 1080px;
+}
+
+/* CSS for Lottie container */
+#lottie-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the Lottie container is behind other elements */
+}
+
+#ourPurpose {
+    margin-top: 25px;
+}
+
+.purpose {
+    min-height: 460vh;
+    margin-top: 25vh;
+    padding: 0;
+    position: absolute;
+    z-index: -100;
+}
+
+.lottie-small {
+    position: relative;
+    width: 400px;
+    height: 267px;
+}
+
+.lottie-big {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+.hero-lottie {
+    position: relative;
+    width: 350px;
+    height: 234px;
+}
+
+#footer { background-color: #17245F; }
+.video-container { padding: 100px 0;}
+.footer-content { min-height: 250px; }
+
+/* Styles for large devices and up (large desktops) */
+@media (min-width: 1600px) {
+    .purpose {
+        min-height: 300vh;
+        margin-top: 25vh;
+        padding: 0;
+        position: absolute;
+        z-index: -100;
+    }
+}
+
+@media (min-width: 2200px) {
+    .purpose {
+        min-height: 270vh;
+        margin-top: 25vh;
+        padding: 0;
+        position: absolute;
+        z-index: -100;
+    }
+}
